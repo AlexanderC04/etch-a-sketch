@@ -10,15 +10,10 @@ function createGrid() {
   let squareSizeValue = parseInt(squareSize.value);
   rangeSliderProgress.textContent = `${squareSizeValue} x ${squareSizeValue}`;
   for (let i = 0; i < Math.pow(squareSizeValue, 2); i++) {
-    // Create
     let square = document.createElement("div");
     square.setAttribute("class", "square");
-
-    // Size
     let squarePX = 500 / squareSizeValue + "px";
     square.setAttribute("style", `width: ${squarePX}; height: ${squarePX}`);
-
-    // Append
     document.querySelector(".container").appendChild(square);
     square.addEventListener("mouseover", () => {
       square.setAttribute("class", "square square__hovered");
