@@ -12,6 +12,8 @@ This project should not be easy for you. You’ll probably have to Google freque
 
 #### Desktop
 
+![](./images/screenshotdesktop.png)
+
 ### Links
 
 - Solution URL: (https://github.com/AlexanderC04/etch-a-sketch.git)

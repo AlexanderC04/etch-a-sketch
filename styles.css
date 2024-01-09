@@ -1,23 +1,53 @@
-body {
+* {
   margin: 0;
   padding: 0;
+}
+body {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #061b2b;
+  background-image: url(images/space_stars_static.png);
 }
+
 .container {
+  width: 500px;
+  height: 500px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-  flex-wrap: wrap;
-  max-width: 1000px;
+  flex-flow: row wrap;
+  margin: 20px;
+  border: 1px solid #222629;
+}
+.square {
+  box-sizing: border-box;
+  background-color: #b4b7bb;
+  border: 1px solid #474b4f;
+  width: 500px;
+  height: 500px;
+}
+.square__hovered {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.content {
-  width: 50px;
-  height: 50px;
-  margin: 5px;
-  background-color: black;
+input[type="range"]::-webkit-slider-runnable-track {
+  border: none;
+  border-radius: 7px;
+  background: #515151;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 510%;
+  background: #141414;
+  border: 2px solid #515151;
+  cursor: pointer;
+}
+.range-slider__progress {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: #ffff;
+  font-size: 20px;
 }
