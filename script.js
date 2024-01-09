@@ -13,7 +13,8 @@ function createGrid() {
     let square = document.createElement("div");
     square.setAttribute("class", "square");
     let squarePX = 500 / squareSizeValue + "px";
-    square.setAttribute("style", `width: ${squarePX}; height: ${squarePX}`);
+    square.style.width = squarePX;
+    square.style.height = squarePX;
     document.querySelector(".container").appendChild(square);
     square.addEventListener("mouseover", () => {
       square.setAttribute("class", "square square__hovered");
