@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #061b2b;
+  background-image: url(images/space_stars_static.png);
+}
+
+.input-container {
+  margin: 20px auto;
+  text-align: center;
+}
+.input-container label {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: #ffff;
+  font-size: 16px;
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+
+.square {
+  box-sizing: border-box;
+  background-color: #414346e3;
+  border: 1px solid #474b4f;
+  width: 500px;
+  height: 500px;
+}
+
+.hovered {
+  background-color: rgba(0, 0, 0, 0.01);
+}
